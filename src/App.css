@@ -1,15 +1,50 @@
-:root {--mc:#008850; --sc:#00e085; --lc:#f9f9f9; --dc:#444;}
+:root {
+  --mc: #008850;
+  --sc: #00e085;
+  --lc: #f9f9f9;
+  --dc: #444444;
+  --gc: #dddddd;
+}
 
-.inner{position: relative; width: 1200px; margin: 0 auto;}
+.inner {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
 
-.TopBanner{background: var(--mc); color: var(--lc); overflow: hidden; height: 155px;}
-/* height value : auto => transition not working */
-.TopBanner.on{height: 0; transition:0.5s;}
-.TopBanner .inner{padding: 50px 0;}
-.TopBanner i{position: absolute; top: 50px; right: 0; font-size: 20px;}
-.TopBanner h2{font-size: 30px; font-weight: 700; margin: 0 0 10px 0;}
-.TopBanner span{font-weight: 500; color: var(--sc);}
+.TopBanner {
+  background: var(--mc);
+  color: var(--lc);
+  overflow: hidden;
+  height: 155px;
+}
 
+.TopBanner.on {
+  height: 0;
+  transition: 0.5s;
+}
+
+.TopBanner .inner {
+  padding: 50px 0;
+}
+
+.TopBanner i {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  font-size: 30px;
+}
+
+.TopBanner h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.TopBanner span {
+  font-weight: 300;
+  color: var(--sc)
+}
 
 .Header {
   position: fixed;
@@ -186,3 +221,35 @@
   border-top: 1px solid var(--gc);
   transform: rotate(45deg);
 }
+
+.MainVisual {
+  position: relative;
+  padding: 155px 0 0 0; color: var(--lc);
+}
+
+.MainVisual figure {
+  position: relative;
+  height: calc(100vh - 155px);
+  background-repeat: no-repeat ;
+  background-position: center center;
+  background-size: 130% auto;transition: 0.5s;
+}
+.MainVisual figure.on{ background-size: 100% auto; }
+
+.MainVisual .itm01{background-image: url(../public/assets/img/main_visual01.jpg);}
+.MainVisual .itm02{background-image: url(../public/assets/img/main_visual02.jpg);}
+.MainVisual .itm03{background-image: url(../public/assets/img/main_visual03.jpg);}
+
+.MainVisual figure .inner {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+}
+
+.MainVisual .slick-track, .MainVisual .slick-slide{transition-duration:5ms ;}
+
+.MainVisual .slideNum{position: absolute; bottom: 100px; left: 50%; margin: 0 0 0 -600px;}
+.MainVisual .slideTab{position: absolute; top: 50%; left: 50%; transform: translate(-100%,-50%);  margin: 0 0 0 600px;}
+.MainVisual .slideArrows button{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); background: transparent; border: none; color: var(--lc); font-size: 20px; padding: 30px; background: rgba(0, 0, 0, 0.1);}
+.MainVisual .slideArrows button:first-child{margin: 0 0 0 -700px;}
+.MainVisual .slideArrows button:last-child{margin: 0 0 0 700px;}

@@ -2,6 +2,7 @@
 import './App.css';
 
 import Header from './component/Header'
+import MainVisual from './component/MainVisual';
 
 const App = () => {
 
@@ -9,6 +10,8 @@ const App = () => {
     <div className="Wrap">
 
       <Header />
+      <MainVisual />
+
     </div>
   );
 }
