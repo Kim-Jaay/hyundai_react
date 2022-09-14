@@ -6,9 +6,9 @@ import "slick-carousel/slick/slick.css";
 
 
 const SLIDE = [
-    { id: 1, content: "01 The world expands along the new path created.", desc: "현대엘리베이터가 만든 새로운 길을 따라 세상을 위로 넓어집니다.", link: "/" },
-    { id: 2, content: "02 The world expands along the new path created.", desc: "현대엘리베이터가 만든 새로운 길을 따라 세상을 위로 넓어집니다.", link: "/" },
-    { id: 3, content: "03 The world expands along the new path created.", desc: "현대엘리베이터가 만든 새로운 길을 따라 세상을 위로 넓어집니다.", link: "/" }
+    { id: 1, content: "The world expands along\n the new path created.", desc: "현대엘리베이터가 만든 새로운 길을 따라 세상을 위로 넓어집니다.", link: "/", title: "new world" },
+    { id: 2, content: "The world expands along\n the new path created.", desc: "현대엘리베이터가 만든 새로운 길을 따라 세상을 위로 넓어집니다.", link: "/", title: "The new world" },
+    { id: 3, content: "The world expands along\n the new path created.", desc: "현대엘리베이터가 만든 새로운 길을 따라 세상을 위로 넓어집니다.", link: "/", title: "The new" }
 ]
 
 
@@ -18,10 +18,9 @@ const MainVisual = () => {
         setIDX(0)
     }, []);
     const mainSlide = useRef(null);
-
     const setting = {
         arrows: false,
-        dots: true,
+        dots: false,
         afterChange: index => setIDX(index),
         autoplay: true,
         autoplaySpeed: 2000,
@@ -34,9 +33,9 @@ const MainVisual = () => {
                         return (
                             <figure key={slide.id} className={"itm0" + slide.id + (idx === IDX ? ' on' : '')} >
                                 <div className="inner" >
-                                    <h2>{slide.content}</h2>
-                                    <p>{slide.desc}</p>
-                                    <a href={slide.link} target="_blank">View More</a>
+                                    <p className="tit">{slide.content}</p>
+                                    <div className="des">{slide.desc}</div>
+                                    <a href={slide.link} className="cbtn">View More</a>
                                 </div>
                             </figure>
                         )
@@ -52,7 +51,7 @@ const MainVisual = () => {
                 {
                     SLIDE.map((dots, idx) => {
                         return (
-                            <li key={dots.id} className={idx === IDX ? ' on' : ''}>{dots.content}</li>
+                            <li key={dots.id} className={idx === IDX ? ' on' : ''} onClick={() => { mainSlide.current.slickGoTo(idx) }}>{dots.title}</li>
                         )
                     })
                 }
