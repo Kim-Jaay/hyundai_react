@@ -91,3 +91,22 @@
 .Portfolio .box { margin: 0 0 30px 0; }
 .Portfolio .des { font-size: 20px; font-weight: 500; }
 .Portfolio .left .box { width: 400px; box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); }
+
+.Solution .solution_slide figure { width: 1200px; }
+.Solution .solution_slide figure img { margin: 0 auto; }
+.Solution .container { position: relative; }
+.Solution .box { position: absolute; top: 100px; left: 50%; margin: 0 0 0 -540px; width: 300px; box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); background: #fff; padding: 50px 40px; }
+.Solution .box::after { position: absolute; top: 60px; left: -20px; content: ''; width: 40px; height: 2px; background: var(--mc); }
+.Solution .box .tit { font-size: 25px; font-weight: 500; margin: 0 0 20px 0; }
+.Solution .box p { font-size: 15px; font-weight: 300; min-height: 150px; text-align: left; line-height: 1.45; word-break: keep-all; }
+.Solution .box .content { margin: 0 0 40px 0; }
+.Solution .num { font-size: 30px; font-weight: 500; color: var(--mc); }
+.Solution .num span { font-size: 20px; font-weight: 300; color: var(--dc); }
+.Solution .arrows i { position: absolute; inset: 40% auto auto 50%; transform: translate(-50%,-50%); font-size: 20px; color: var(--lc); padding: 20px 40px; background: rgba(0, 0, 0, 0.2); cursor: pointer; }
+.Solution .arrows i:first-child { margin: 0 0 0 -630px; }
+.Solution .arrows i:last-child { margin: 0 0 0 630px; }
+.Solution .dots { text-align: center; font-size: 0; }
+.Solution .dots>li { display: inline-block; width: 20px; height: 20px; background: var(--gc); margin: 30px 10px; }
+.Solution .dots>li.on { background: var(--mc); }
+
+
