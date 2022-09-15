@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/hyundai_react/static/css/main.c1024a33.css",
-    "main.js": "/hyundai_react/static/js/main.d738e4b1.js",
+    "main.css": "/hyundai_react/static/css/main.82ff3fd6.css",
+    "main.js": "/hyundai_react/static/js/main.0d784f69.js",
     "static/media/main_visual01.jpg": "/hyundai_react/static/media/main_visual01.b8894172143185ca6316.jpg",
     "static/media/main_visual02.jpg": "/hyundai_react/static/media/main_visual02.c364a3ad2ae4f6644470.jpg",
     "static/media/main_visual03.jpg": "/hyundai_react/static/media/main_visual03.3131c222b1291255b096.jpg",
     "static/media/section1_bg.jpg": "/hyundai_react/static/media/section1_bg.8d14bfea11d9ba6e1ccb.jpg",
     "index.html": "/hyundai_react/index.html",
-    "main.c1024a33.css.map": "/hyundai_react/static/css/main.c1024a33.css.map",
-    "main.d738e4b1.js.map": "/hyundai_react/static/js/main.d738e4b1.js.map"
+    "main.82ff3fd6.css.map": "/hyundai_react/static/css/main.82ff3fd6.css.map",
+    "main.0d784f69.js.map": "/hyundai_react/static/js/main.0d784f69.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1024a33.css",
-    "static/js/main.d738e4b1.js"
+    "static/css/main.82ff3fd6.css",
+    "static/js/main.0d784f69.js"
   ]
 }
