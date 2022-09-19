@@ -14,6 +14,9 @@ const PTF = [
     { id: 9, title: "롯데월드몰" },
 ]
 
+// slice, splice 배열 메소드, 스프레드 연산자
+const NPTF = [...PTF, PTF[0]].slice(1, PTF.lenght)
+
 
 const Portfolio = () => {
     const LS = useRef();
@@ -68,7 +71,7 @@ const Portfolio = () => {
                             arrows={false}
                         >
                             {
-                                PTF.map(building => {
+                                NPTF.map(building => {
                                     return (
                                         <figure>
                                             <div className="box">
