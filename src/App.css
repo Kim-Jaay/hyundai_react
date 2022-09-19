@@ -134,14 +134,14 @@
 .News .title { margin: 0 0 20px 0; font-size: 20px; font-weight: 500; word-break: keep-all; line-height: 1.45; min-height: 80px; }
 .News figure:hover .title { text-decoration: underline; }
 .News span { font-size: 13px; font-weight: 300; }
-
 .Footer { border-top: 1px solid var(--gc); }
 .Footer .inner { display: flex; justify-content: space-between; }
 .Footer .ft_top { line-height: 70px; border-bottom: 1px solid var(--gc); }
 .Footer .ft_top .left { display: flex; gap: 50px; }
 .Footer .ft_top .left li { position: relative; }
-.Footer .ft_top .left li~li::before { content: ''; position: absolute; top: 50%; left: -22px; width: 4px; height: 4px; background: var(--mc); }
-
+.Footer .ft_top .left li~li::before { content: ""; position: absolute; top: 50%; left: -22px; width: 4px; height: 4px; background: var(--gc); }
+.Footer .ft_top .left li span { color: var(--mc); font-size: 20px; margin: 0 0 0 5px; }
+.Footer .ft_bottom { padding: 30px 0; line-height: 1.45; }
 .ServiceLink { display: flex; gap: 30px; position: relative; }
 
 .ServiceLink .title { position: relative; padding: 0 40px 0 0; cursor: pointer; }
